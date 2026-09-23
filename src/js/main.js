@@ -8,12 +8,14 @@ const priceEl = document.querySelector('.price-field');
 const errorEl = document.querySelector('.error');
 
 
+
 formEl.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const value = inputEl.value.trim();
     const cost = Number(priceEl.value);
 
+    // check conditions and validate the input before adding
     if (value.length >= 3 && cost > 0) {
         store.dispatch('addItem', {
             name: value,

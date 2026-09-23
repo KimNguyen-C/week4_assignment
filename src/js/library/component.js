@@ -1,3 +1,4 @@
+// no changes on this file from the lecture
 import Store from "../store/store.js";
 
 export default class Component {

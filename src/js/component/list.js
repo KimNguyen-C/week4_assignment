@@ -17,8 +17,7 @@ export default class List extends Component {
             return;
         }
 
-        // add item
-
+        // create list of item with price, delete and update button
         self.element.innerHTML = `
             <ul>
                 ${items.map((item, index) => {
